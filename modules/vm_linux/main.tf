@@ -38,7 +38,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   disk_controller_type            = "NVMe" # "SCSI" # "IDE" # "SCSI" is the default value. "NVMe" is only supported for Ephemeral OS Disk.
   tags                            = var.tags
 
-  custom_data = var.install_webapp ? filebase64("../scripts/install-webapp.sh") : null
+  custom_data = var.install_webapp ? filebase64("../../scripts/install-webapp.sh") : null
 
   os_disk {
     name                 = "os-disk-${var.vm_name}"
