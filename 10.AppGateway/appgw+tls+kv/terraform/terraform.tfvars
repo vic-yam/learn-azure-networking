@@ -1,0 +1,1 @@
+custom_domain_name = "azureappgwtls.com"
